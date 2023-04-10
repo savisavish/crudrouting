@@ -20,7 +20,7 @@ const AddUser = () => {
         setIsSubmit(true);
         if (Object.keys(formErrors).length === 0 && isSubmit) {
             alert(1)
-            await axios.post('http://localhost:3003/users', user); 
+            await axios.post('http://localhost:3002/users', user); 
             navigate("/")
         }
     };
